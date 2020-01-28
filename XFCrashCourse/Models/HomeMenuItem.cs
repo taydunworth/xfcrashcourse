@@ -7,7 +7,8 @@ namespace XFCrashCourse.Models
     public enum MenuItemType
     {
         Browse,
-        About
+        About,
+        Label
     }
     public class HomeMenuItem
     {

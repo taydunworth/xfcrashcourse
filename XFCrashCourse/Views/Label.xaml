@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XFCrashCourse.Views.Label">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="FontSize Property"
+                       FontSize="Title"
+                       FontAttributes="Bold" />
+
+                <Label Text="This is title text."
+                       FontSize="Title" />
+
+                <Label Text="This is subtitle text."
+                       FontSize="Subtitle" />
+
+                <Label Text="This is large text."
+                       FontSize="Large" />
+
+                <Label Text="This is header text."
+                       FontSize="Header" />
+
+                <Label Text="This is medium text."
+                       FontSize="Medium" />
+
+                <Label Text="This is body text."
+                       FontSize="Body" />
+
+                <Label Text="This is default text."
+                       FontSize="Default" />
+
+                <Label Text="This is small text."
+                       FontSize="Small" />
+
+                <Label Text="This is micro text."
+                       FontSize="Micro" />
+
+                <Label Text="This is caption text."
+                       FontSize="Caption" />
+
+                <Label Text="TextDecorations Property"
+                       FontSize="Title"
+                       FontAttributes="Bold"
+                       Margin="0,30,0,0"/>
+
+                <Label Text="This is underlined text."
+                       TextDecorations="Underline"  />
+
+                <Label Text="This is text with strikethrough."
+                       TextDecorations="Strikethrough" />
+
+                <Label Text="This is underlined text with strikethrough."
+                       TextDecorations="Underline, Strikethrough" />
+
+                <Label Text="TextColor Property"
+                       FontSize="Title"
+                       FontAttributes="Bold"
+                       Margin="0,30,0,0"/>
+
+                <Label Text="This is a green label."
+                       TextColor="#77d065" />
+
+                <Label Text="FontAttributes Property"
+                       FontSize="Title"
+                       FontAttributes="Bold"
+                       Margin="0,30,0,0"/>
+
+                <Label Text="This is a bold label."
+                       FontAttributes="Bold" />
+
+                <Label Text="This is a bold label."
+                       FontAttributes="Italic" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
