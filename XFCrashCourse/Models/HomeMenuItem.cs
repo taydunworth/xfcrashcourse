@@ -8,7 +8,8 @@ namespace XFCrashCourse.Models
     {
         Browse,
         About,
-        Label
+        Label,
+        Button
     }
     public class HomeMenuItem
     {

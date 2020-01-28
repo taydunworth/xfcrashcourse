@@ -3,6 +3,11 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
+                <Label Text="Label Element"
+                       FontSize="Title"
+                       FontAttributes="Bold"
+                       Margin="0,0,0,30"/>
+
                 <Label Text="FontSize Property"
                        FontSize="Title"
                        FontAttributes="Bold" />

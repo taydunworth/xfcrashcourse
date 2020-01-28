@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XFCrashCourse.Views.Button">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Label Element"
+                   FontSize="Title"
+                   FontAttributes="Bold"
+                   Margin="0,0,0,30"/>
+
+            <Button Text="Click to Rotate Button!"
+                    x:Name="button"
+                    BackgroundColor="#396acc"
+                    TextColor="#fff"
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                    Padding="20,10"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    Clicked="OnButtonClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

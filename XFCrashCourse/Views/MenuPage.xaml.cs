@@ -22,7 +22,8 @@ namespace XFCrashCourse.Views
             {
                 new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse" },
                 new HomeMenuItem {Id = MenuItemType.About, Title="About" },
-                new HomeMenuItem {Id = MenuItemType.Label, Title="Label" }
+                new HomeMenuItem {Id = MenuItemType.Label, Title="Label" },
+                new HomeMenuItem {Id = MenuItemType.Button, Title="Button" }
             };
 
             ListViewMenu.ItemsSource = menuItems;

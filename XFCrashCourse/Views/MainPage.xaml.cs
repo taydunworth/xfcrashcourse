@@ -39,6 +39,9 @@ namespace XFCrashCourse.Views
                     case (int)MenuItemType.Label:
                         MenuPages.Add(id, new NavigationPage(new Label()));
                         break;
+                    case (int)MenuItemType.Button:
+                        MenuPages.Add(id, new NavigationPage(new Button()));
+                        break;
                 }
             }
 
