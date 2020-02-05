@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="XFCrashCourse.Views.ItemsPage" Title="{Binding Title}" x:Name="BrowseItemsPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="XFCrashCourse.Views.HomePage" Title="Home" x:Name="WelcomeItemsPage">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -9,19 +9,22 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <Frame BackgroundColor="Aquamarine"
-                Grid.Row="0"
-                Grid.Column="0"
-                HasShadow="False">
+        <Frame BackgroundColor="#80ced2"
+               Grid.Row="0"
+               Grid.Column="0"
+               HasShadow="False"
+               CornerRadius="0">
             <StackLayout>
-                    <Label Text="Intro to XAML and Xamarin. Forms"
-                        FontSize="Title"
-                        FontAttributes="Bold"
-                        Margin="0,30,0,0"
-                        HorizontalTextAlignment="Center" />
-                    <Label Text="Example App for SDG Crash Course"
-                        FontSize="Body"
-                        HorizontalTextAlignment="Center" />
+                <Label Text="Intro to XAML and Xamarin. Forms"
+                       FontSize="Title"
+                       FontAttributes="Bold"
+                       Margin="0,30,0,0"
+                       TextColor="#333"
+                       HorizontalTextAlignment="Center" />
+                <Label Text="Example App for SDG Crash Course"
+                       FontSize="Body"
+                       TextColor="#333"
+                       HorizontalTextAlignment="Center" />
             </StackLayout>
         </Frame>
         <ScrollView Grid.Row="1"
@@ -29,21 +32,22 @@
                     Padding="20">
             <StackLayout>
                 <Label Text="About the Course"
-                        FontSize="Subtitle"
-                        FontAttributes="Bold"
-                        Margin="0,0,0,20"
-                        HorizontalTextAlignment="Start" />
+                       FontSize="Subtitle"
+                       FontAttributes="Bold"
+                       Margin="0,0,0,20"
+                       TextColor="#21243d"
+                       HorizontalTextAlignment="Start" />
                 <Label FontSize="Body"
-                        LineHeight="1.2"
-                        Margin="0,0,0,20">
+                       LineHeight="1.2"
+                       Margin="0,0,0,20">
                     <Label.Text>
                         We’ll be talking through the basics of mobile app development using XAML and Xamarin.Forms, the benefits of Xamarin.Forms and its shared code for both Android and iOS, and the process of building out a simple mobile app.
                     </Label.Text>
                 </Label>
                 <Image Source="https://secure.meetupstatic.com/photos/event/6/0/e/2/highres_476784802.jpeg"
-                        HeightRequest="200" />
+                       HeightRequest="200" />
                 <Label FontSize="Body"
-                        LineHeight="1.2">
+                       LineHeight="1.2">
                     <Label.Text>
                         This Crash Course is Intended to be a listen and learn event, but if attendee already has mobile dev requirements on their computer (Xcode, Android SDK, Java SDK, and Visual Studio) installed, then they are welcome to code along during the last portion of the crash course
                     </Label.Text>
@@ -51,15 +55,16 @@
             </StackLayout>
         </ScrollView>
         <Frame HasShadow="False"
-                BackgroundColor="Beige"
-                Grid.Row="2"
-                Grid.Column="0"
-                Padding="40">
+               BackgroundColor="#ffffff"
+               Grid.Row="2"
+               Grid.Column="0"
+               Padding="40">
             <Button Text="Sign Up"
-                    BackgroundColor="BlueViolet"
-                    TextColor="White"
+                    BackgroundColor="#d5562b"
+                    TextColor="#ffffff"
                     FontSize="Subtitle"
-                    FontAttributes="Bold" />
+                    FontAttributes="Bold"
+                    Clicked="SignUpClicked" />
         </Frame>
     </Grid>
 </ContentPage>

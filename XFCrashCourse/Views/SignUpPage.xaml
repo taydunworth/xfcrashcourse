@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" Title="Sign Up" x:Class="XFCrashCourse.Views.SignUpPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#80ced2"
+                   HeightRequest="150"
+                   CornerRadius="0"
+                   Padding="0,40,0,0"
+                   HasShadow="False">
+                <StackLayout>
+                        <Label Text="Intro to XAML and Xamarin. Forms"
+                               FontSize="Title"
+                               FontAttributes="Bold"
+                               Margin="0,30,0,0"
+                               TextColor="#333"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="Sign Up for the Course"
+                               FontSize="Body"
+                               TextColor="#333"
+                               HorizontalTextAlignment="Center" />
+                </StackLayout>
+            </Frame>
+            <Frame HasShadow="False"
+                   Padding="20">
+                <StackLayout>
+                    <Label Text="Email Address"
+                           FontSize="Medium"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Start"
+                           TextColor="#21243d" />
+                    <Entry Placeholder="name@email.com" />
+
+                    <Grid Padding="0,10,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Text="First Name"
+                               FontSize="Medium"
+                               FontAttributes="Bold"
+                               HorizontalTextAlignment="Start"
+                               Grid.Row="0"
+                               Grid.Column="0"
+                               VerticalTextAlignment="End"
+                               TextColor="#21243d" />
+                        <Entry Placeholder="Grace"
+                               Grid.Row="1"
+                               Grid.Column="0" />
+
+                        <Label Text="Last Name"
+                               FontSize="Medium"
+                               FontAttributes="Bold"
+                               HorizontalTextAlignment="Start"
+                               Grid.Row="0"
+                               Grid.Column="1"
+                               VerticalTextAlignment="End"
+                               TextColor="#21243d" />
+                        <Entry Placeholder="Hopper"
+                               Grid.Row="1"
+                               Grid.Column="1" />
+                    </Grid>
+
+                    <Label Text="Class Date"
+                           FontSize="Medium"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Start"
+                           Margin="0,20,0,0"
+                           TextColor="#21243d" />
+                    <Picker Title="Choose a date">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                              <x:String>February 5th</x:String>
+                              <x:String>February 15th</x:String>
+                              <x:String>March 1st</x:String>
+                            </x:Array>
+                          </Picker.ItemsSource>
+                    </Picker>
+
+                    <Label Text="Birthday"
+                           FontSize="Medium"
+                           HorizontalTextAlignment="Start"
+                           Margin="0,20,0,0"
+                           FontAttributes="Bold"
+                           TextColor="#21243d" />
+                    <DatePicker />
+
+                    <Label Text="Special Accommodations"
+                           FontSize="Medium"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Start"
+                           Margin="0,20,0,0"
+                           TextColor="#21243d" />
+                    <Editor Placeholder="Please list any special accommodations here."
+                            HeightRequest="100" />
+
+                    <Button Text="Submit"
+                            BackgroundColor="#d5562b"
+                            FontSize="Large"
+                            TextColor="#ffffff"
+                            FontAttributes="Bold"
+                            Padding="20" />
+                    <Button Text="Cancel"
+                            BackgroundColor="#f99d1b"
+                            FontSize="Large"
+                            TextColor="#ffffff"
+                            FontAttributes="Bold"
+                            Padding="20"
+                            Clicked="CancelClick"/>
+                </StackLayout>
+             </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

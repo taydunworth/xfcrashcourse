@@ -6,10 +6,11 @@ namespace XFCrashCourse.Models
 {
     public enum MenuItemType
     {
-        Browse,
+        Home,
         About,
         Label,
-        Button
+        Button,
+        SignUp
     }
     public class HomeMenuItem
     {
